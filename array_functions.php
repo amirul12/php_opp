@@ -14,7 +14,15 @@
 	 //shift first element out of an array
 	 $a = array_shift($number);
 	 
-	 print_r($a);
+	 print_r($a) ."<br>";
+	 
+	 print_r($number);
+	 echo "</br>";
+	 //pops that are include last element
+	 //and return it as same way.
+	 $b = array_pop($number);
+	 echo "b: ".$b."</br>";
+	 print_r($number)
 	 
 	 
 	?>
