@@ -42,7 +42,9 @@
 	echo $car2->wheelsdoors()."<br />";
 	
 	echo " Check Class which is parents or Not<br />";
-	 
+	echo "Car parent Class: ".get_parent_class("Car")."<br />";
+	echo "Cpmpact parent Class: ".get_parent_class("Compact")."<br />";
+	
 	 
 	?>
 	</body>
