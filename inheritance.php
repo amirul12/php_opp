@@ -18,6 +18,11 @@
 	
 	class Compact extends Car{
 		
+		var $doors = 2;
+		
+		function wheelsdoors(){
+			return $this->wheels + $this->doors + 3;
+		}
 		
 	}
 	$car1 = new Car();
@@ -35,6 +40,8 @@
 	echo $car2->wheels."<br />";
 	echo $car2->doors."<br />";
 	echo $car2->wheelsdoors()."<br />";
+	
+	echo " Check Class which is parents or Not<br />";
 	 
 	 
 	?>
