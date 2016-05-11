@@ -21,11 +21,20 @@
 		
 	}
 	$car1 = new Car();
-	$car1 =new Car();
+	$car2 =new Compact();
 	
+	// car1 object under class Car
+	echo "Car Class and car1 object<br />";
 	echo $car1->wheels."<br />";
 	echo $car1->doors."<br />";
 	echo $car1->wheelsdoors()."<br />";
+	
+	
+    // car2 object under class Compact
+	echo "Compact Class and car2 object<br />";
+	echo $car2->wheels."<br />";
+	echo $car2->doors."<br />";
+	echo $car2->wheelsdoors()."<br />";
 	 
 	 
 	?>
