@@ -3,6 +3,13 @@ require_once("database.php");
  
  class User {
 	 
+	 public $id;
+	 public $username;
+	 public $password;
+	 public $first_name;
+	 public $last_name;
+ 
+	 
 	 public  static function find_all(){
 		 return self::find_by_sql("SELECT * FROM users");
 	 }
@@ -18,6 +25,13 @@ require_once("database.php");
 		$result_set = $database -> query($sql);
 		return $result_set;
 		 
+	 }
+	 public function full_name(){
+		 if(isset($this->first_name) && isset($this->last_name)){
+			 return $this->first_name . " ".$this->last_name;
+		 }else{
+			 return "";
+		 }
 	 }
 	 
  } 
