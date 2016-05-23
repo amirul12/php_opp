@@ -6,7 +6,16 @@ require_once("../includes/user.php");
   
  
 $record = User::find_by_id(1);
-echo $record['username'];
+$user = new User();
+$user->id = $record['id'];
+$user->username = $record['username'];
+$user->password = $record['password'];
+$user->first_name = $record['first_name'];
+$user->last_name = $record['last_name'];
+ 
+echo $user->username."<br>";
+echo $user->full_name()."<br>";
+echo $user->password;
 echo "<hr/>"; 
 
 $user_set = User::find_all();
