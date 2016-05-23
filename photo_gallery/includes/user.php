@@ -34,6 +34,17 @@ require_once("database.php");
 		 }
 	 }
 	 
+	 private static function instantiate($record){
+		 $object = new self;
+		 $object->id 			= record['id'];
+		 $object->password 		= record['password'];
+		 $object->username 		= record['username'];
+		 $object->first_name 	= record['first_name'];
+		 $object->last_name 	= record['last_name'];
+		 return $object;
+	 }
+	 
+	 
  } 
 
 ?>
