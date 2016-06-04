@@ -2,6 +2,8 @@
 require_once('../../includes/functions.php');
 require_once('../../includes/session.php');
 if (!$session->is_logged_in()) { redirect_to("login.php"); }
+
+print_r($_SESSION['user_id']);
 ?>
 <html>
   <head>
@@ -14,6 +16,7 @@ if (!$session->is_logged_in()) { redirect_to("login.php"); }
     </div>
     <div id="main">
 		<h2>Menu</h2>
+ 
 		
 		</div>
 		
