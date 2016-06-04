@@ -1,9 +1,9 @@
 <?php
 require_once("../../includes/initialize.php");
  
-//if($session->is_logged_in()) {
- // redirect_to("index.php");
-//}
+if($session->is_logged_in()) {
+ redirect_to("index.php");
+}
 // Remember to give your form's submit tag a name="submit" attribute!
 if (isset($_POST['submit'])) { // Form has been submitted.
 

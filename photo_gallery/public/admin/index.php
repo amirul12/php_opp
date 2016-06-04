@@ -16,6 +16,7 @@ print_r($_SESSION['user_id']);
     </div>
     <div id="main">
 		<h2>Menu</h2>
+		<h4> welcome to <?php echo $_SESSION['user_id']; ?></h4>
  
 		
 		</div>
